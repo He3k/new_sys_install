@@ -2,13 +2,13 @@
 
 # create need directories
 cd ..
-mkdir Soft
-mkdir Work
+mkdir soft
+mkdir work
 
 # download need soft
-cd Soft
+cd soft
 git clone https://github.com/He3k/tmp
-git clone https://github.com/He3k/Programm 
+git clone https://github.com/He3k/Programm
 
 # install need progs
 sudo apt install firefox gedit mc tree python3 python git-lfs
@@ -23,5 +23,10 @@ sudo apt install grub-customizer
 # install snap
 sudo apt update
 sudo apt install snapd
-#install spotify & telegram
-#sudo snap install spotify telegram-desktop
+# install spotify & telegram
+sudo snap install spotify telegram-desktop
+
+# delete
+cd ..
+cd Downloads
+rm -rf new_sys_install
