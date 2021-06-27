@@ -2,8 +2,8 @@
 
 # create need directories
 cd ..
-mkdir soft
-mkdir work
+mkdir Soft
+mkdir Work
 
 # download need soft
 cd soft
