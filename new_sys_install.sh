@@ -28,5 +28,4 @@ sudo snap install spotify telegram-desktop
 
 # delete
 cd ..
-cd Downloads
 rm -rf new_sys_install
