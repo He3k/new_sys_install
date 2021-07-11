@@ -11,18 +11,21 @@ git clone https://github.com/He3k/tmp
 git clone https://github.com/He3k/Programm
 
 # install need progs
-sudo apt install firefox gedit mc tree python3 python git-lfs
+sudo pacman -Syyuu firefox gedit mc tree python3 python git-lfs -y
 # for install *.deb
-sudo apt install gdebi
+#sudo pacman -Syyuu gdebi
 # install ppa
-sudo apt update
-sudo apt-get install software-properties-common
-# install grub custumizer
-sudo apt update
-sudo apt install grub-customizer
-# install snap
-sudo apt update
-sudo apt install snapd
+#sudo pacman -Syyuu
+#sudo pacman -Syyuu software-properties-common
+# install snapd
+git clone https://aur.archlinux.org/snapd.git
+cd snapd
+makepkg -si
+sudo systemctl enable --now snapd.socket
+sudo ln -s /var/lib/snapd/snap /snap
+sudo snap install snap-store
+cd ..
+rm -rf snapd
 # install spotify & telegram
 sudo snap install spotify telegram-desktop
 
